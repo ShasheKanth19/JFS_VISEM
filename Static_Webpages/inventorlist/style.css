@@ -11,7 +11,6 @@ h1 {
     margin-top: 20px;
     display: flex;
     align-items: center;
-    /* border:5px solid red; */ /* commented out */
 }
 
 .circle-image {
@@ -21,12 +20,28 @@ h1 {
     object-fit: cover;
     border: 5px solid #555;
     margin-right: 30px;
-    transition: border-radius 0.5ms ease; /* smooth transition */
+    transition: border-radius 0.5s ease;
 }
 
-/* Extra class for square shape */
+/* Square style for Gosling, same size as circle */
 .square-image {
+    width: 180px;
+    height: 180px;
     border-radius: 0%;        /* square */
+    object-fit: cover;
+    border: 5px solid #555;
+    margin-right: 30px;
+}
+
+/* Blinking glow border for Gosling */
+.blink-border {
+    animation: blinkGlow 1s infinite;
+}
+
+@keyframes blinkGlow {
+    0%   { border-color: #555; box-shadow: 0 0 5px #555; }
+    50%  { border-color: rgb(237, 32, 158); box-shadow: 0 0 20px rgb(254, 0, 0); }
+    100% { border-color: #555; box-shadow: 0 0 5px #555; }
 }
 
 .info-box {

@@ -51,20 +51,14 @@ function showInventor() {
         document.getElementById("infoBox").innerText = "Select an inventor to view details";
     } else {
         img.src = data[inventor].img;
-        img.className = "circle-image"; // default circle
         document.getElementById("infoBox").innerText = data[inventor].info;
 
-        // Special behavior for James Gosling
         if (inventor === "gosling") {
-            // Add hover and click listeners
-            img.onmouseover = () => img.classList.add("square-image");
-            img.onmouseout = () => img.classList.remove("square-image");
-            img.onclick = () => img.classList.toggle("square-image");
+            // Square + blinking glow for Gosling
+            img.className = "square-image blink-border";
         } else {
-            // Remove listeners for other inventors
-            img.onmouseover = null;
-            img.onmouseout = null;
-            img.onclick = null;
+            // Normal circle for others
+            img.className = "circle-image";
         }
     }
 }
