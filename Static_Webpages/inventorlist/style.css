@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    /* border:5px solid red; */ /* commented out */
+}
+
+.circle-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;       /* default circle */
+    object-fit: cover;
+    border: 5px solid #555;
+    margin-right: 30px;
+    transition: border-radius 0.5ms ease; /* smooth transition */
+}
+
+/* Extra class for square shape */
+.square-image {
+    border-radius: 0%;        /* square */
+}
+
+.info-box {
+    border: 2px solid black;
+    padding: 15px;
+    width: 400px;
+    min-height: 150px;
+    background: #f9f9f9;
+}
