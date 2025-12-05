@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif ;
+    background-color: #e2bee9;
+    margin: 20px;
+    padding: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #5b7bb0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(253, 251, 251, 0.1);
+}
+
+button {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(59, 224, 9);
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
