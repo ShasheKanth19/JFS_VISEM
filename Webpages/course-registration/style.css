@@ -1,23 +1,30 @@
 body {
-    font-family: Arial, sans-serif ;
+    font-family: Arial,'Times New Roman','Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif ;
     background-color: #e2bee9;
     margin: 20px;
     padding: 10px;
 }
-
+#stuname, #total {
+  width: 100%; 
+  max-width: 150px; 
+  height: 30px;
+}
 .container {
     max-width: 800px;
     margin: auto;
-    background: #5b7bb0;
+    background: #40cbda;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(253, 251, 251, 0.1);
+    box-shadow: 0 0 10px rgba(248, 3, 3, 0.1);
+}
+.DSA {
+    color : magenta
 }
 
 button {
     text-align: center;
     padding: 10px;
-    background-color: rgb(59, 224, 9);
+    background-color: rgb(210, 106, 228);
 }
 .form-group {
     margin-bottom: 15px;
